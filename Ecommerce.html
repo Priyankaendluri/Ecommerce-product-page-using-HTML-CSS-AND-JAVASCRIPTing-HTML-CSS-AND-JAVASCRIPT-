@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Page</title>
+    <link rel="stylesheet" href="/home/rgukt/Ecommerce.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">MyShop</div>
+        <div class="cart">
+            <button id="viewCartButton">View Cart (0)</button>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button class="add-to-cart" data-product="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15.00</p>
+                <button class="add-to-cart" data-product="2" data-name="Product 2" data-price="15.00">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-product="3" data-name="Product 3" data-price="20.00">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cartItems">
+                <!-- Cart items will be dynamically listed here -->
+            </ul>
+            <p>Total: $<span id="totalAmount">0.00</span></p>
+            <button id="closeModalButton">Close</button>
+        </div>
+    </div>
+
+    <script src="/home/rgukt/Ecommerce.js"></script>
+</body>
+</html>
+
